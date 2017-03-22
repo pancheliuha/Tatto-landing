@@ -1,0 +1,54 @@
+/***gallery section***/
+.gallery {
+    width: 100%;
+    padding: 0;
+}
+
+.gallery__title {
+    position: relative;
+    background-color: $bgDark;
+    @include phones() {
+        height: 200px;
+    }
+}
+
+
+
+@media (min-width: 480px) {
+    .col-md-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 480px) {
+    .col-md-fiveX2 {
+        width: 40%;
+        float: left;
+    }
+}
+
+@include phones() {
+    .col-xs-six {
+        width: 50%;
+        float: left;
+    }
+
+    .col-xs-sixX2 {
+        width: 100%;
+        float: left;
+    }
+}
+
+.img-wrapper-gallery {
+    @extend .example-img__block;
+}
+
+.img-gallery {
+    @extend .img;
+    transition: transform .4s;
+}
+
+.gallery__overlay {
+    background-color: rgba(#9a977a, .7) !important;
+}

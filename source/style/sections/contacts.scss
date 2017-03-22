@@ -1,0 +1,89 @@
+.contacts {
+    width: 100%;
+    min-height: 500px;
+    @include centered-flex();
+}
+
+.contacts__descr {
+    position: relative;
+    padding: 0;
+}
+
+.contacts__title {
+    height: 200px;
+    position: relative;
+}
+
+
+.contacts__head {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacts__info-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.contacts__info,
+.contacts__hours{
+    width: 50%;
+}
+
+.contacts__info__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contacts__info__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__info__item {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.contacts__info__data {
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.contacts__info__hours {
+    font-weight: 600;
+}
+
+.socials__contact {
+    padding: 0 10%;
+    margin-top: 40px;
+}
+
+/***contacts form***/
+.contacts__form-wrapper {
+    text-align: center;
+    padding-top: 70px;
+
+    @include tablets() {
+        margin-bottom: 20px;
+    }
+}
+#contacts__form__text,
+#contacts__form__email,
+#contacts__message{
+    @extend #team__form__text;
+    width: 80%;
+}
+
+#contacts__message {
+    height: 200px;
+    resize: none;
+}
+
+#submit__contacts {
+    @extend #submit;
+    width: 60%;
+    display: inline-block;
+}

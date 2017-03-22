@@ -1,0 +1,18 @@
+
+
+/*colors*/
+$textCol: #010101;
+$bg: #f2efe5;
+$bgMedium: #ccc8b6;
+$bgDark: #afac9c;
+
+@import "font-awesome/font-awesome";
+@import "common/fonts";
+@import "common/extends";
+@import "common/_mixins";
+@import "common/adjustment";
+
+
+
+//styles
+@import "sections/**/*.scss";
